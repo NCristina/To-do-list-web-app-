@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiko&family=Farsan&family=Mogra&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/274f641e8b.js" crossorigin="anonymous"></script>
+
+    <title>Todo List Web App </title>
+</head>
+
+<body>
+
+    <nav id="myTitle">
+        <div>
+            <a href="#">To-Do List Web App</a>
+        </div>
+    </nav>
+    
+    <div id="formTasks">
+        <form id="form-Task">
+            <div id="titleForm">
+                <input type="text" id="title" maxlength="50" placeholder="Title.." required autocomplete="off">
+            </div>
+            <div id="descriptionForm">
+                <textarea type="text" id="description" maxlength="500" placeholder="Description.." required></textarea>
+            </div>
+            <button type="submit">Save</button>
+        </form>  
+    </div>   
+    
+    <div id="listTasks">
+        <div id="listLegend" style="text-transform: uppercase;">
+            <div id="listTitle">
+                <p>Title</p>
+            </div>
+            <div id="listDescription">
+                <p>Description</p>
+            </div>
+            <div id="listDelete">
+                <p>Delete</p>
+            </div>
+        </div>
+                
+        <div id="tasks">
+            <div id="taskTitle"></div>
+            <div id="taskDescription"></div>
+            <div id="deleteTask"></div>
+        </div>
+    </div> 
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
